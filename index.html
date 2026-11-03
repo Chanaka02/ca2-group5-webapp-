@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 5 Cloud Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 60px 20px;
+            min-height: 300px;
+            border-bottom: 1px solid #eee;
+        }
+        #home {
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #date-display {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Group 5 Cloud Showcase</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#team">Team</a>
+            <a href="#cloud">Cloud</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Our Cloud Showcase</h2>
+        <p>This platform highlights Group G's cloud deployment strategies, architecture designs, and collaborative lab projects. Explore our sections to learn more about our team and technical stack.</p>
+        <button id="show-date-btn">Show Date</button>
+        <p id="date-display"></p>
+    </section>
+
+    <section id="team">
+        <h2>Our Team</h2>
+        <p>Meet the minds behind Group 5. We are a team of aspiring cloud engineers and developers working together to build scalable, efficient web solutions.</p>
+    </section>
+
+    <section id="cloud">
+        <h2>Cloud Services & Infrastructure</h2>
+        <p>Our project leverages modern cloud architecture, utilizing virtual machines, automated deployment pipelines, and secure networking configurations to ensure high availability.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions about our cloud showcase? Reach out to us through our repository channels or academic contact points.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Group 5. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('show-date-btn').addEventListener('click', function() {
+            const today = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('date-display').textContent = "Today's Date: " + today.toLocaleDateString('en-US', options);
+        });
+    </script>
+
+</body>
+</html>
